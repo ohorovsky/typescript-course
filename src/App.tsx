@@ -13,8 +13,8 @@ function App() {
         <Button onClick={(e) => {
             e.preventDefault()
             console.log(e)
-        }}/>
-        <img src={logo} className="App-logo" alt="logo" />
+        }}><img src={logo} className="App-logo" alt="logo" /></Button>
+
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
