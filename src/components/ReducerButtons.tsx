@@ -5,9 +5,13 @@ const initialState = { rValue: true };
 type State = {
   rValue: boolean;
 };
-type Action = {
-  type: string;
-};
+
+// type Action = { type: "one" } | { type: "two" };
+type Action =
+  | { type: "one" }
+  | { type: "two" }
+  | { type: "three" }
+  | { type: "four" };
 
 function reducer(state: State, action: Action) {
   switch (action.type) {
@@ -26,6 +30,7 @@ export const ReducerButtons = () => {
     <div>
       <button onClick={() => dispatch({ type: "one" })}>Action 1</button>
       <button onClick={() => dispatch({ type: "two" })}>Action 2</button>
+      <button onClick={() => dispatch({ type: "three" })}>Action 3 </button>
       {state?.rValue && <p>visible</p>}
     </div>
   );
