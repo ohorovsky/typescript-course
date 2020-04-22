@@ -1,6 +1,7 @@
 import React from 'react';
 import { Head } from './components/Head'
 import Button from './components/Button'
+import {Input} from './components/Input'
 import logo from './logo.svg';
 import './App.css';
 
@@ -18,6 +19,7 @@ function App() {
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
         </p>
+        <Input />
         <a
           className="App-link"
           href="https://reactjs.org"
