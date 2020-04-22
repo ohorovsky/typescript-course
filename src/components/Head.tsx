@@ -3,6 +3,8 @@ import React from "react";
 type Props = {
   title: string; // required
   isActive?: boolean; // optional
+  // type3: Array<string>;
+  // type4: string[]; // same as type3
 };
 
 export const Head = ({ title, isActive = false }: Props) => {
