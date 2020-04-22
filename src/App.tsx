@@ -1,5 +1,6 @@
 import React from 'react';
 import { Head } from './components/Head'
+import Button from './components/Button'
 import logo from './logo.svg';
 import './App.css';
 
@@ -9,6 +10,7 @@ function App() {
     <div className="App">
       <Head title="Meg" />
       <header className="App-header">
+        <Button onClick={(value) => console.log(value)}/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
