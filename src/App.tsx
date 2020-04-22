@@ -10,7 +10,10 @@ function App() {
     <div className="App">
       <Head title="Meg" />
       <header className="App-header">
-        <Button onClick={(value) => console.log(value)}/>
+        <Button onClick={(e) => {
+            e.preventDefault()
+            console.log(e)
+        }}/>
         <img src={logo} className="App-logo" alt="logo" />
         <p>
           Edit <code>src/App.tsx</code> and save to reload.
